@@ -13,7 +13,7 @@ function MainBootstrap() {
           />
         </Col>
         <Col xs={12} md={8} lg={8}>
-          <h2>Contenido Principal</h2>
+          <h2>Contenido Principal Actualizado</h2>
           <p>
             Este es un ejemplo de contenido dentro del área principal.
           </p>
