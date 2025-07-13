@@ -71,7 +71,7 @@ function ProductoDetalleBoostrap({}) {
     <div className="detalle-container">
       <Row xs= {1} md={2} lg={2} >
         <Col>
-          <img className="detalle-imagen" src={productoEncontrado.imagen} alt={productoEncontrado.name} />
+          <img className="detalle-imagen" src={productoEncontrado.image} alt={productoEncontrado.name} />
         </Col>
         <Col>
           <div className="detalle-info">

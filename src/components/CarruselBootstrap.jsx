@@ -27,7 +27,7 @@ function CarruselBootstrap() {
                 <Carousel.Item key={producto.id}>
                     <img
                     className="d-block w-100"
-                    src={producto.imagen}
+                    src={producto.image}
                     alt={producto.name}
                     style={{ height: "400px", objectFit: "cover" }}
                     />

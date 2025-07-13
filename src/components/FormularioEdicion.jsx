@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { useProductosContext } from "../contexts/ProductosContext";
 import { useAuthContext } from "../contexts/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
+import { dispararSweetBasico } from "../assets/SweetAlert";
+import { Navigate } from 'react-router-dom';
 
 function FormularioEdicion({ }) {
   const {admin} = useAuthContext();
@@ -49,7 +51,7 @@ function FormularioEdicion({ }) {
     if (!producto.description.trim() || producto.description.length < 10) {
       return("La descripción debe tener al menos 10 caracteres.")
     }
-    if(!producto.imagen.trim()){
+    if(!producto.image.trim()){
       return("La url de la imgaen no debe estar vacía")
     }
     else{
@@ -90,7 +92,7 @@ function FormularioEdicion({ }) {
         <div>
           <label className="form-label">Imagen URL:</label>
           <input
-            type="text" className="form-control" name="imagen" value={producto.imagen} onChange={handleChange} required/>
+            type="text" className="form-control" name="image" defaultValue={producto.image} onChange={handleChange} required/>
         </div>
         <div>
           <label className="form-label">Precio:</label>

@@ -12,7 +12,7 @@ function CarritoCardBootstrap({ producto, funcionDisparadora }) {
             <Col md={3}>
                 <Card.Img
                 variant="top"
-                src={producto.imagen}
+                src={producto.image}
                 style={{ maxHeight: "100px", objectFit: "cover", width: "100%" }}
                 />
             </Col>

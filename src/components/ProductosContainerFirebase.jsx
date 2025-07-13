@@ -8,7 +8,7 @@ function ProductosContainerFirebase({}){
     const [error, setError] = useState(null);
 
     {useEffect(() => {
-        fetch('https://68100d8b27f2fdac24101ef5.mockapi.io/productos')
+        fetch('https://681f80f972e59f922ef67248.mockapi.io/products')
             .then((respuesta) =>
                 respuesta.json()
             )

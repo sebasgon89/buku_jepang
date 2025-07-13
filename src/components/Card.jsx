@@ -10,7 +10,7 @@ function CardProducto({producto}){
 
     return(
         <Card>
-            <Card.Img variant="top" src={producto.imagen} style={{ maxHeight: "200px", objectFit: "cover" }} />
+            <Card.Img variant="top" src={producto.image} style={{ maxHeight: "200px", objectFit: "cover" }} />
             <Card.Body>
               <Card.Title>{producto.name}</Card.Title>
                 <Link to={"/productos/" + producto.id}><Button variant="primary">Ver detalles del producto</Button></Link>

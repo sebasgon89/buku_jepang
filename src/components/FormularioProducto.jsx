@@ -26,7 +26,7 @@ function FormularioProducto({}) {
     if (!producto.description.trim() || producto.description.length < 10) {
       return("La descripción debe tener al menos 10 caracteres.")
     }
-    if(!producto.imagen.trim()){
+    if(!producto.image.trim()){
       return("La url de la imgaen no debe estar vacía")
     }
     else{
@@ -44,7 +44,7 @@ function FormularioProducto({}) {
     const validarForm = validarFormulario()
     if (validarForm == true) {
       agregarProducto(producto).then((data) => {
-        setProducto({ name: '', price: '', description: '', imagen: ""});
+        setProducto({ name: '', price: '', description: '', image: ""});
       }).catch((error) => {
         dispararSweetBasico("Hubo un problema al agregar el producto", error, "error", "Cerrar")
       })
@@ -77,7 +77,7 @@ function FormularioProducto({}) {
         <div>
           <label className="form-label">Imagen URL:</label>
           <input
-            type="text" className="form-control" name="imagen" value={producto.imagen} onChange={handleChange} required/>
+            type="text" className="form-control" name="imagen" value={producto.image} onChange={handleChange} required/>
         </div>
         <div>
           <label className="form-label">Precio:</label>
