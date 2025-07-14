@@ -108,7 +108,7 @@ export function ProductosProvider({ children }) {
             return(
                 new Promise(async (res, rej) => {
                     try {
-                        const respuesta = await fetch(`https://681f80f972e59f922ef67248.mockapi.io/products${id}`, {
+                        const respuesta = await fetch(`https://681f80f972e59f922ef67248.mockapi.io/products/${id}`, {
                         method: 'DELETE',
                         });
                         if (!respuesta.ok) throw new Error('Error al eliminar');

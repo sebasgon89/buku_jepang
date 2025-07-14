@@ -2,15 +2,12 @@ function About() {
     
     return (
       <section style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-        <h2>Sobre Nosotros</h2>
+        <h2>Sobre Buku Jepang</h2>
         <p>
-          Bienvenido a nuestra tienda online. Nos especializamos en ofrecer
-          productos de alta calidad a precios accesibles. Nuestro objetivo es
-          brindarte una experiencia de compra simple, rápida y segura.
+          Esta tienda es un proyecto casero para ofrecer los libros que más me apasionan, los libros de autores japoneses del siglo XX.
         </p>
         <p>
-          Ya sea que estés buscando tecnología, ropa, accesorios o más, en
-          nuestro e-commerce vas a encontrar lo que necesitás.
+          Tanta nostalgia y melancolía no entran en esta página, pero es una linda forma de comenzar. Sayonara!
         </p>
       </section>
     );

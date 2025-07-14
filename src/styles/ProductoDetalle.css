@@ -2,7 +2,7 @@
     display: flex;
     gap: 30px;
     padding: 20px;
-    background-color: #fdf5e6;
+    background-color: hsl(113, 95%, 93%);
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 20px auto;

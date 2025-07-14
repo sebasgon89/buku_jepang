@@ -12,7 +12,7 @@ function FormularioProducto({}) {
     name: '',
     price: '',
     description: '',
-    imagen: ""
+    image: ""
   });
 
   const validarFormulario = () => {
@@ -62,7 +62,7 @@ function FormularioProducto({}) {
   return ( 
     <div className='d-flex flex-column  justify-content-center  align-items-center'>
       <form onSubmit={handleSubmit2} className="p-4 border rounded shadow w-100">
-        <h3>Editar Producto</h3>
+        <h3>Manejar catálogo</h3>
         <div>
           <label className="form-label">Nombre:</label>
           <input
@@ -77,7 +77,7 @@ function FormularioProducto({}) {
         <div>
           <label className="form-label">Imagen URL:</label>
           <input
-            type="text" className="form-control" name="imagen" value={producto.image} onChange={handleChange} required/>
+            type="text" className="form-control" name="image" value={producto.image} onChange={handleChange} required/>
         </div>
         <div>
           <label className="form-label">Precio:</label>
@@ -101,7 +101,7 @@ function FormularioProducto({}) {
             className="form-control"
           />
         </div>
-        <button type="submit">Actualizar Producto</button>
+        <button type="submit">Cargar información</button>
       </form>
     </div>
   );

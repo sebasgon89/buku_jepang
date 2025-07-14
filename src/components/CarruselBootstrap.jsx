@@ -29,12 +29,9 @@ function CarruselBootstrap() {
                     className="d-block w-100"
                     src={producto.image}
                     alt={producto.name}
-                    style={{ height: "400px", objectFit: "cover" }}
+                    style={{ height: "400px", objectFit: "contain" }}
                     />
-                    <Carousel.Caption>
-                    <h3>{producto.name}</h3>
-                    <p>{producto.description}</p>
-                    </Carousel.Caption>
+            
                 </Carousel.Item>
                 ))}
             </Carousel>

@@ -6,10 +6,11 @@
     justify-content: space-between;
     height: 400px;
     width: 100%;
+
 }
 
 .producto-card{
-    background-color: bisque;
+    background-color: hsl(89, 93%, 35%);
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 30%;

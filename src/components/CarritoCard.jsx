@@ -14,10 +14,10 @@ function CarritoCard({producto, funcionDisparadora}){
             <img className="carrito-image" src={producto.image}></img>
             <span style={{color:"black"}}>{producto.cantidad}</span>
             <div className="carrito-unitario">
-                <span style={{color:"black"}}>{producto.price} $</span>
+                <span style={{color:"black"}}>${producto.price}</span>
             </div>
             <div className="carrito-sub">
-                <span style={{color:"black"}}>{producto.cantidad * producto.price} $</span>
+                <span style={{color:"black"}}>${producto.cantidad * producto.price}</span>
             </div>
             <button className="boton-carrito" onClick={borrarDelCarrito} style={{backgroundColor: "red" ,color:"black"}}>X</button>
         </div>

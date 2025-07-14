@@ -14,7 +14,7 @@ function ProductosContainer({}){
 /////////////////////////////////
     const productosPorPagina = 8;
     const [paginaActual, setPaginaActual] = useState(1);
-    // Calcular el índice de los productos a mostrar en la página actual
+    
     const indiceUltimoProducto = paginaActual * productosPorPagina;
     const indicePrimerProducto = indiceUltimoProducto - productosPorPagina;
     const productosActuales = productos.slice(indicePrimerProducto, indiceUltimoProducto);

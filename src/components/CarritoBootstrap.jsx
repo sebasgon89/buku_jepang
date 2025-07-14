@@ -29,7 +29,7 @@ function CarritoBootstrap() {
 
     return (
         <Container className="my-4">
-        <h2 className="mb-3">Carrito de compras</h2>
+        <h2 className="mb-3">Lo que te estás llevando</h2>
         <Button variant="warning" className="mb-4" onClick={funcionDisparadora2}>
             Vaciar carrito
         </Button>
@@ -47,7 +47,7 @@ function CarritoBootstrap() {
             )}
         </Row>
         {total > 0 && (
-            <h4 className="mt-4 text-end">Total a pagar: {total.toFixed(2)} $</h4>
+            <h4 className="mt-4 text-end">Total a pagar: $ {total.toFixed(2)}</h4>
         )}
         </Container>
     );
