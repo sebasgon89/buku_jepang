@@ -30,7 +30,6 @@ function App() {
         <NavBoostrap/>
         <Routes>
           <Route path="/" element={<Home />}/>
-          {/*<Route path='/login' element={<Login user={usuarioLogeado} admin={adminLogeado} setLogeadoAdmin={manejarAdmin} setLogeadoUser={manejarUser}/>}/>*/}
           <Route path="/login" element={<LoginBoost2/>} />
           <Route path="/productos" element={<ProductosContainer/>}/>
           <Route path="/carrito" element={<CarritoBootstrap /> }/>      

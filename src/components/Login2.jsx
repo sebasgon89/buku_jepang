@@ -33,7 +33,7 @@ function Login2() {
       }if(error.code == "auth/weak-password"){
         dispararSweetBasico("Contraseña debil", "Password should be at least 6 characters", "error", "Cerrar")
       }
-      //alert("Error")
+      
     })
   }
 
@@ -50,7 +50,7 @@ function Login2() {
       if(error.code == "auth/invalid-credential"){
         dispararSweetBasico("Credenciales incorrectas", "", "error", "Cerrar")
       }
-      //alert("Error")
+      
     })
   }
 
@@ -118,34 +118,6 @@ function Login2() {
     </div>
     )
   }
-  //Formulario para inicio de sesion sin firebase
-  /*
-  return (
-    <div>
-    <form onSubmit={handleSubmit}>
-      <h2>Iniciar sesión</h2>
-      <div>
-        <label>Usuario:</label>
-        <input
-          type="text"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Contraseña:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button type="submit">Iniciar sesión</button>
-    </form>
-    
-    
-    </div>
-  );*/
-  //Formulario para inicio de sesion sin firebase
+ 
 }
 export default Login2;

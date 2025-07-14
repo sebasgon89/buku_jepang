@@ -1,5 +1,4 @@
 import React, { createContext, useState, useContext } from 'react';
-// Crear el contexto de autenticación
 export const AuthContext = createContext();
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

@@ -33,7 +33,7 @@ function LoginBoost() {
       }if(error.code == "auth/weak-password"){
         dispararSweetBasico("Contraseña debil", "Password should be at least 6 characters", "error", "Cerrar")
       }
-      //alert("Error")
+      
     })
   }
 

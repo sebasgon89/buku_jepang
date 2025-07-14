@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
-// Crear el contexto de de los productos
+
 const ProductosContext = createContext();
 export function ProductosProvider({ children }) {
     const [productos, setProductos] = useState([])
@@ -46,10 +46,8 @@ export function ProductosProvider({ children }) {
                     const data = await respuesta.json();
                             console.log('Producto agregado:', data);
                             res(data)
-                            //alert('Producto agregado correctamente');
                     } catch (error) {
                         console.error(error.message);
-                        //alert('Hubo un problema al agregar el producto.');
                         rej(error.message)
                     }
             })

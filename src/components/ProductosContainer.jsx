@@ -11,15 +11,15 @@ import { FaSearch } from "react-icons/fa";
 
 function ProductosContainer({}){
     const {productos, obtenerProductos, filtrarProductos} = useProductosContext();
-/////////////////////////////////
+
     const productosPorPagina = 8;
     const [paginaActual, setPaginaActual] = useState(1);
     
     const indiceUltimoProducto = paginaActual * productosPorPagina;
     const indicePrimerProducto = indiceUltimoProducto - productosPorPagina;
     const productosActuales = productos.slice(indicePrimerProducto, indiceUltimoProducto);
-//////////////////////////////
-//Paginacion////////////////////////
+
+//Paginacion
 
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState(null);
@@ -36,7 +36,7 @@ function ProductosContainer({}){
 
     useEffect(() => {
         filtrarProductos(filtro)
-    },[filtro])//filtro
+    },[filtro])
 
     const totalPaginas = Math.ceil(productos.length / productosPorPagina);
     const cambiarPagina = (numeroPagina) => setPaginaActual(numeroPagina);
